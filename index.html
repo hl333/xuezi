@@ -1,1 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var msg="我草！你家真大！";
+        msg=msg.replace(/我草/ig,"**");
+        console.log(`李然说：${msg}`);
+        // 鄙视题 将一句话中的每个单词首字母都变为大写
+        var str="you can you up";
+        str=str.replace(/\b[a-z]/gi,function(kword){
+            return kword.toLocaleUpperCase();
+        });
+        console.log(str);
+    </script>
+</body>
+</html>
